@@ -19,6 +19,8 @@ impl Rectangle{
 
 // struct allow multiple impl blocks
 impl Rectangle{
+    // associated function - not tied to an instance of a struct
+    // they don't have &self as an argument
     fn square(size: u32)-> Rectangle {
         Rectangle{
             width: size,
